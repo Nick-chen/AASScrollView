@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-//    let advance :UIViewController = LTAdvancedManagerDemo() as UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         let button = UIButton(type: .custom)
         button.frame = CGRect.init(origin: self.view.center, size: CGSize.init(width: 200, height: 50))
+        button.center = view.center
         button.setTitle("click", for: .normal)
         button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
         button.backgroundColor = UIColor.cyan
@@ -26,8 +26,8 @@ class ViewController: UIViewController {
     }
     
     @objc func buttonClicked() {
-    
-//        navigationController?.pushViewController(advance, animated: true)
+        let vc = LTAdvancedManagerDemo()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
