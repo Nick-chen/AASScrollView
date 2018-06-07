@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.0'
 
     s.source       = { :git => "https://github.com/Nick-chen/AASScrollView.git", :tag => s.version.to_s }
-    s.source_files  = "AASScrollView", "AASScrollView/AASScrollView/lib/**/*"
+    s.source_files  = "AASScrollView", "AASScrollView/AASScrollView/lib/*.swift"
     s.requires_arc = true
     s.swift_version = '4.1'
 
