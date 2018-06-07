@@ -110,6 +110,8 @@ extension LTAdvancedManager {
     private func scrollInsets(_ currentVC: UIViewController ,_ up: CGFloat) {
         currentVC.glt_scrollView?.contentInset = UIEdgeInsetsMake(up, 0, 0, 0)
         currentVC.glt_scrollView?.scrollIndicatorInsets = UIEdgeInsetsMake(up, 0, 0, 0)
+        currentVC.glt_scrollView?.contentOffset.y = self.distanceBottomOffset()
+
     }
     
     //MARK: 首次创建pageView的ChildVC回调

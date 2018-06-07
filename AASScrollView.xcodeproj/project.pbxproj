@@ -15,7 +15,6 @@
 		A0C2BA3620C989DC00FC218A /* AASScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA3520C989DC00FC218A /* AASScrollViewTests.swift */; };
 		A0C2BA4120C989DC00FC218A /* AASScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA4020C989DC00FC218A /* AASScrollViewUITests.swift */; };
 		A0C2BA5920C98A5100FC218A /* LTSimpleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA4F20C98A5100FC218A /* LTSimpleManager.swift */; };
-		A0C2BA5A20C98A5100FC218A /* AASScrollView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A0C2BA5020C98A5100FC218A /* AASScrollView.podspec */; };
 		A0C2BA5B20C98A5100FC218A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A0C2BA5120C98A5100FC218A /* LICENSE */; };
 		A0C2BA5C20C98A5100FC218A /* LTDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5220C98A5100FC218A /* LTDispatchQueue.swift */; };
 		A0C2BA5D20C98A5100FC218A /* LTAdvancedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5320C98A5100FC218A /* LTAdvancedManager.swift */; };
@@ -24,6 +23,12 @@
 		A0C2BA6020C98A5100FC218A /* LTVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5620C98A5100FC218A /* LTVCExtension.swift */; };
 		A0C2BA6120C98A5100FC218A /* LTScrollExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5720C98A5100FC218A /* LTScrollExtension.swift */; };
 		A0C2BA6220C98A5100FC218A /* LTTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5820C98A5100FC218A /* LTTableView.swift */; };
+		A0C2BA6420C98B9F00FC218A /* AASScrollView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A0C2BA6320C98B9F00FC218A /* AASScrollView.podspec */; };
+		A0C2BA6B20C98CE900FC218A /* LTHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6720C98CE900FC218A /* LTHeaderView.swift */; };
+		A0C2BA6C20C98CE900FC218A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6820C98CE900FC218A /* TestViewController.swift */; };
+		A0C2BA6D20C98CE900FC218A /* LTAdvancedManagerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6920C98CE900FC218A /* LTAdvancedManagerDemo.swift */; };
+		A0C2BA6E20C98CE900FC218A /* LTAdvancedTestOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6A20C98CE900FC218A /* LTAdvancedTestOneVC.swift */; };
+		E54B43B5D3983736A5F1FA4F /* Pods_AASScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C11AB8FE6C086E169736D4 /* Pods_AASScrollView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04A625080EC0D76CF4C9D501 /* Pods-AASScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AASScrollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-AASScrollView/Pods-AASScrollView.release.xcconfig"; sourceTree = "<group>"; };
+		14C11AB8FE6C086E169736D4 /* Pods_AASScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AASScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2BA1D20C989DA00FC218A /* AASScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AASScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2BA2020C989DA00FC218A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C2BA2220C989DA00FC218A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +65,6 @@
 		A0C2BA4020C989DC00FC218A /* AASScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AASScrollViewUITests.swift; sourceTree = "<group>"; };
 		A0C2BA4220C989DC00FC218A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0C2BA4F20C98A5100FC218A /* LTSimpleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTSimpleManager.swift; sourceTree = "<group>"; };
-		A0C2BA5020C98A5100FC218A /* AASScrollView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AASScrollView.podspec; sourceTree = "<group>"; };
 		A0C2BA5120C98A5100FC218A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A0C2BA5220C98A5100FC218A /* LTDispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTDispatchQueue.swift; sourceTree = "<group>"; };
 		A0C2BA5320C98A5100FC218A /* LTAdvancedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTAdvancedManager.swift; sourceTree = "<group>"; };
@@ -67,6 +73,12 @@
 		A0C2BA5620C98A5100FC218A /* LTVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVCExtension.swift; sourceTree = "<group>"; };
 		A0C2BA5720C98A5100FC218A /* LTScrollExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTScrollExtension.swift; sourceTree = "<group>"; };
 		A0C2BA5820C98A5100FC218A /* LTTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTTableView.swift; sourceTree = "<group>"; };
+		A0C2BA6320C98B9F00FC218A /* AASScrollView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AASScrollView.podspec; sourceTree = "<group>"; };
+		A0C2BA6720C98CE900FC218A /* LTHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTHeaderView.swift; sourceTree = "<group>"; };
+		A0C2BA6820C98CE900FC218A /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		A0C2BA6920C98CE900FC218A /* LTAdvancedManagerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTAdvancedManagerDemo.swift; sourceTree = "<group>"; };
+		A0C2BA6A20C98CE900FC218A /* LTAdvancedTestOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTAdvancedTestOneVC.swift; sourceTree = "<group>"; };
+		F6ADD5F758A883F88F860F29 /* Pods-AASScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AASScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AASScrollView/Pods-AASScrollView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E54B43B5D3983736A5F1FA4F /* Pods_AASScrollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,13 +107,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		050B3AFEB6D75052D1BB047A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6ADD5F758A883F88F860F29 /* Pods-AASScrollView.debug.xcconfig */,
+				04A625080EC0D76CF4C9D501 /* Pods-AASScrollView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		28B4B3832C25F6060263932C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C11AB8FE6C086E169736D4 /* Pods_AASScrollView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A0C2BA1420C989DA00FC218A = {
 			isa = PBXGroup;
 			children = (
+				A0C2BA5120C98A5100FC218A /* LICENSE */,
+				A0C2BA6320C98B9F00FC218A /* AASScrollView.podspec */,
 				A0C2BA1F20C989DA00FC218A /* AASScrollView */,
 				A0C2BA3420C989DC00FC218A /* AASScrollViewTests */,
 				A0C2BA3F20C989DC00FC218A /* AASScrollViewUITests */,
 				A0C2BA1E20C989DA00FC218A /* Products */,
+				050B3AFEB6D75052D1BB047A /* Pods */,
+				28B4B3832C25F6060263932C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +151,7 @@
 		A0C2BA1F20C989DA00FC218A /* AASScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				A0C2BA6520C98CE900FC218A /* LTAdvanced */,
 				A0C2BA4E20C98A5100FC218A /* lib */,
 				A0C2BA2020C989DA00FC218A /* AppDelegate.swift */,
 				A0C2BA2220C989DA00FC218A /* ViewController.swift */,
@@ -150,8 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				A0C2BA4F20C98A5100FC218A /* LTSimpleManager.swift */,
-				A0C2BA5020C98A5100FC218A /* AASScrollView.podspec */,
-				A0C2BA5120C98A5100FC218A /* LICENSE */,
 				A0C2BA5220C98A5100FC218A /* LTDispatchQueue.swift */,
 				A0C2BA5320C98A5100FC218A /* LTAdvancedManager.swift */,
 				A0C2BA5420C98A5100FC218A /* LTTableViewProtocal.swift */,
@@ -163,6 +196,25 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		A0C2BA6520C98CE900FC218A /* LTAdvanced */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2BA6620C98CE900FC218A /* Controller */,
+			);
+			path = LTAdvanced;
+			sourceTree = "<group>";
+		};
+		A0C2BA6620C98CE900FC218A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2BA6720C98CE900FC218A /* LTHeaderView.swift */,
+				A0C2BA6820C98CE900FC218A /* TestViewController.swift */,
+				A0C2BA6920C98CE900FC218A /* LTAdvancedManagerDemo.swift */,
+				A0C2BA6A20C98CE900FC218A /* LTAdvancedTestOneVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C2BA4520C989DC00FC218A /* Build configuration list for PBXNativeTarget "AASScrollView" */;
 			buildPhases = (
+				CAEC6BAAD9C5E9C7BED0DE77 /* [CP] Check Pods Manifest.lock */,
 				A0C2BA1920C989DA00FC218A /* Sources */,
 				A0C2BA1A20C989DA00FC218A /* Frameworks */,
 				A0C2BA1B20C989DA00FC218A /* Resources */,
+				ABEA19B27929417A382A95A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,7 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C2BA5A20C98A5100FC218A /* AASScrollView.podspec in Resources */,
+				A0C2BA6420C98B9F00FC218A /* AASScrollView.podspec in Resources */,
 				A0C2BA2B20C989DC00FC218A /* LaunchScreen.storyboard in Resources */,
 				A0C2BA2820C989DC00FC218A /* Assets.xcassets in Resources */,
 				A0C2BA2620C989DA00FC218A /* Main.storyboard in Resources */,
@@ -291,12 +345,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ABEA19B27929417A382A95A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AASScrollView/Pods-AASScrollView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AASScrollView/Pods-AASScrollView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAEC6BAAD9C5E9C7BED0DE77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AASScrollView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0C2BA1920C989DA00FC218A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A0C2BA5F20C98A5100FC218A /* LTPageView.swift in Sources */,
+				A0C2BA6B20C98CE900FC218A /* LTHeaderView.swift in Sources */,
 				A0C2BA2320C989DA00FC218A /* ViewController.swift in Sources */,
 				A0C2BA6120C98A5100FC218A /* LTScrollExtension.swift in Sources */,
 				A0C2BA6220C98A5100FC218A /* LTTableView.swift in Sources */,
@@ -304,8 +398,11 @@
 				A0C2BA5D20C98A5100FC218A /* LTAdvancedManager.swift in Sources */,
 				A0C2BA6020C98A5100FC218A /* LTVCExtension.swift in Sources */,
 				A0C2BA5C20C98A5100FC218A /* LTDispatchQueue.swift in Sources */,
+				A0C2BA6D20C98CE900FC218A /* LTAdvancedManagerDemo.swift in Sources */,
 				A0C2BA2120C989DA00FC218A /* AppDelegate.swift in Sources */,
+				A0C2BA6C20C98CE900FC218A /* TestViewController.swift in Sources */,
 				A0C2BA5920C98A5100FC218A /* LTSimpleManager.swift in Sources */,
+				A0C2BA6E20C98CE900FC218A /* LTAdvancedTestOneVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,10 +573,17 @@
 		};
 		A0C2BA4620C989DC00FC218A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6ADD5F758A883F88F860F29 /* Pods-AASScrollView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AASScrollView/LTAdvanced/MJRefresh",
+				);
 				INFOPLIST_FILE = AASScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,10 +597,17 @@
 		};
 		A0C2BA4720C989DC00FC218A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04A625080EC0D76CF4C9D501 /* Pods-AASScrollView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AASScrollView/LTAdvanced/MJRefresh",
+				);
 				INFOPLIST_FILE = AASScrollView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

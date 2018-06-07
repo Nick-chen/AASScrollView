@@ -1,0 +1,6 @@
+framework module Pods_AASScrollView {
+  umbrella header "Pods-AASScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

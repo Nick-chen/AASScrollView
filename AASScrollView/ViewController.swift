@@ -13,6 +13,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let button = UIButton(type: .custom)
+        button.frame = CGRect.init(origin: self.view.center, size: CGSize.init(width: 200, height: 50))
+        button.setTitle("click", for: .normal)
+        button.addTarget(self, action: #selector(buttonClicked(_:)), for: .touchUpInside)
+        button.backgroundColor = UIColor.cyan
+        
+        self.view.addSubview(button)
+        
+    }
+    
+    @objc private func buttonClicked(_ btn : UIButton) {
+        let advanceVC = LTAdvancedManagerDemo()
+        navigationController?.pushViewController(advanceVC, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
