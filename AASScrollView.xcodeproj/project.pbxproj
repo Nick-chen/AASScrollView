@@ -23,7 +23,6 @@
 		A0C2BA6020C98A5100FC218A /* AASVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5620C98A5100FC218A /* AASVCExtension.swift */; };
 		A0C2BA6120C98A5100FC218A /* AASScrollExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5720C98A5100FC218A /* AASScrollExtension.swift */; };
 		A0C2BA6220C98A5100FC218A /* AASTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5820C98A5100FC218A /* AASTableView.swift */; };
-		A0C2BA6420C98B9F00FC218A /* AASScrollView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A0C2BA6320C98B9F00FC218A /* AASScrollView.podspec */; };
 		A0C2BA6B20C98CE900FC218A /* TestHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6720C98CE900FC218A /* TestHeaderView.swift */; };
 		A0C2BA6C20C98CE900FC218A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6820C98CE900FC218A /* TestViewController.swift */; };
 		A0C2BA6D20C98CE900FC218A /* ManagerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6920C98CE900FC218A /* ManagerTestViewController.swift */; };
@@ -33,6 +32,7 @@
 		A0C2BAB820C9A10200FC218A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6820C98CE900FC218A /* TestViewController.swift */; };
 		A0C2BAB920C9A10600FC218A /* ManagerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6920C98CE900FC218A /* ManagerTestViewController.swift */; };
 		A0C2BABA20C9A10900FC218A /* TestTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6A20C98CE900FC218A /* TestTwoViewController.swift */; };
+		A0C2BABC20C9AF6400FC218A /* AASSVC.podspec in Resources */ = {isa = PBXBuildFile; fileRef = A0C2BABB20C9AF6400FC218A /* AASSVC.podspec */; };
 		E54B43B5D3983736A5F1FA4F /* Pods_AASScrollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C11AB8FE6C086E169736D4 /* Pods_AASScrollView.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,11 +78,11 @@
 		A0C2BA5620C98A5100FC218A /* AASVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASVCExtension.swift; sourceTree = "<group>"; };
 		A0C2BA5720C98A5100FC218A /* AASScrollExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASScrollExtension.swift; sourceTree = "<group>"; };
 		A0C2BA5820C98A5100FC218A /* AASTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASTableView.swift; sourceTree = "<group>"; };
-		A0C2BA6320C98B9F00FC218A /* AASScrollView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AASScrollView.podspec; sourceTree = "<group>"; };
 		A0C2BA6720C98CE900FC218A /* TestHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHeaderView.swift; sourceTree = "<group>"; };
 		A0C2BA6820C98CE900FC218A /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A0C2BA6920C98CE900FC218A /* ManagerTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerTestViewController.swift; sourceTree = "<group>"; };
 		A0C2BA6A20C98CE900FC218A /* TestTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTwoViewController.swift; sourceTree = "<group>"; };
+		A0C2BABB20C9AF6400FC218A /* AASSVC.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AASSVC.podspec; sourceTree = "<group>"; };
 		F6ADD5F758A883F88F860F29 /* Pods-AASScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AASScrollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AASScrollView/Pods-AASScrollView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,8 +132,8 @@
 		A0C2BA1420C989DA00FC218A = {
 			isa = PBXGroup;
 			children = (
+				A0C2BABB20C9AF6400FC218A /* AASSVC.podspec */,
 				A0C2BA5120C98A5100FC218A /* LICENSE */,
-				A0C2BA6320C98B9F00FC218A /* AASScrollView.podspec */,
 				A0C2BA1F20C989DA00FC218A /* AASScrollView */,
 				A0C2BA3420C989DC00FC218A /* AASScrollViewTests */,
 				A0C2BA3F20C989DC00FC218A /* AASScrollViewUITests */,
@@ -318,10 +318,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C2BA6420C98B9F00FC218A /* AASScrollView.podspec in Resources */,
 				A0C2BA2B20C989DC00FC218A /* LaunchScreen.storyboard in Resources */,
 				A0C2BA2820C989DC00FC218A /* Assets.xcassets in Resources */,
 				A0C2BA2620C989DA00FC218A /* Main.storyboard in Resources */,
+				A0C2BABC20C9AF6400FC218A /* AASSVC.podspec in Resources */,
 				A0C2BA5B20C98A5100FC218A /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
