@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LTHeaderView: UIView {
+class TestHeaderView: UIView {
     
     public var delegate: clicked?
     private lazy var label: UILabel = {

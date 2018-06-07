@@ -8,15 +8,15 @@
 
 import UIKit
 
-@objc public protocol LTAdvancedScrollViewDelegate: class {
+@objc public protocol AASAdvancedScrollViewDelegate: class {
     @objc optional func glt_scrollViewOffsetY(_ offsetY: CGFloat)
 }
 
-public class LTAdvancedManager: UIView {
+public class AASAdvancedManager: UIView {
     
     public typealias LTAdvancedDidSelectIndexHandle = (Int) -> Void
     @objc public var advancedDidSelectIndexHandle: LTAdvancedDidSelectIndexHandle?
-    @objc public weak var delegate: LTAdvancedScrollViewDelegate?
+    @objc public weak var delegate: AASAdvancedScrollViewDelegate?
     public typealias getHeaderFlagView = () -> UIView
     @objc public var handleHeaderFlag: getHeaderFlagView!
     //设置悬停位置Y值
@@ -42,9 +42,9 @@ public class LTAdvancedManager: UIView {
     private var titles: [String]
     private weak var currentViewController: UIViewController?
     private var pageView: LTPageView!
-    private var layout: LTLayout
+    private var layout: AASLayout
     
-    @objc public init(frame: CGRect, viewControllers: [UIViewController], titles: [String], currentViewController:UIViewController, layout: LTLayout, headerViewHandle handle: @escaping () -> UIView) {
+    @objc public init(frame: CGRect, viewControllers: [UIViewController], titles: [String], currentViewController:UIViewController, layout: AASLayout, headerViewHandle handle: @escaping () -> UIView) {
         UIScrollView.initializeOnce()
         self.viewControllers = viewControllers
         self.titles = titles
@@ -56,7 +56,7 @@ public class LTAdvancedManager: UIView {
         setupSubViewsConfig(handle)
     }
     
-    @objc public func updateTitlesAndViewControllers(titles:[String], vcs:[UIViewController],currentViewController: UIViewController,layout: LTLayout) {
+    @objc public func updateTitlesAndViewControllers(titles:[String], vcs:[UIViewController],currentViewController: UIViewController,layout: AASLayout) {
         self.viewControllers = vcs;
         self.titles = titles
         self.currentViewController = currentViewController
@@ -71,15 +71,15 @@ public class LTAdvancedManager: UIView {
     }
 }
 
-extension LTAdvancedManager {
+extension AASAdvancedManager {
     //MARK: 创建PageView
-    private func setupPageViewConfig(currentViewController:UIViewController, layout: LTLayout) -> LTPageView {
+    private func setupPageViewConfig(currentViewController:UIViewController, layout: AASLayout) -> LTPageView {
         let pageView = LTPageView(frame: self.bounds, currentViewController: currentViewController, viewControllers: viewControllers, titles: titles, layout:layout)
         return pageView
     }
 }
 
-extension LTAdvancedManager {
+extension AASAdvancedManager {
     
     private func setupSubViewsConfig(_ handle: () -> UIView) {
         let headerView = handle()
@@ -104,7 +104,7 @@ extension LTAdvancedManager {
 }
 
 
-extension LTAdvancedManager {
+extension AASAdvancedManager {
     
     //设置ScrollView的contentInset
     private func scrollInsets(_ currentVC: UIViewController ,_ up: CGFloat) {
@@ -271,7 +271,7 @@ extension LTAdvancedManager {
     }
 }
 
-extension LTAdvancedManager {
+extension AASAdvancedManager {
     
     //MARK: pageView选中事件
     private func setupPageViewDidSelectItem()  {

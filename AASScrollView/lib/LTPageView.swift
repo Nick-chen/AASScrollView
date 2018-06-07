@@ -14,7 +14,7 @@ let SELECT_BASE_COLOR: UIColor = UIColor(r: 255, g: 0, b: 0)
 public let glt_iphoneX = (UIScreen.main.bounds.height == 812.0)
 
 private let glt_sliderDefaultWidth: CGFloat = 40.010101010
-public class LTLayout: NSObject {
+public class AASLayout: NSObject {
     
     /* pageView背景颜色 */
     @objc public var titleViewBgColor: UIColor? = UIColor.gray
@@ -96,7 +96,7 @@ public class LTPageView: UIView {
     private weak var currentViewController: UIViewController?
     private var viewControllers: [UIViewController]
     private var titles: [String]
-    private var layout: LTLayout = LTLayout()
+    private var layout: AASLayout = AASLayout()
     public var didSelectIndexBlock: PageViewDidSelectIndexBlock?
     public var addChildVcBlock: AddChildViewControllerBlock?
     private var glt_currentIndex: Int = 0;
@@ -162,7 +162,7 @@ public class LTPageView: UIView {
     }()
     
     
-    public init(frame: CGRect, currentViewController: UIViewController, viewControllers:[UIViewController], titles: [String], layout: LTLayout) {
+    public init(frame: CGRect, currentViewController: UIViewController, viewControllers:[UIViewController], titles: [String], layout: AASLayout) {
         self.currentViewController = currentViewController
         self.viewControllers = viewControllers
         self.titles = titles
@@ -229,7 +229,7 @@ public class LTPageView: UIView {
 }
 
 extension LTPageView {
-    public func updateTitleAndControllers(titles:[String],currentViewController: UIViewController,controllers:[UIViewController], layout:LTLayout) {
+    public func updateTitleAndControllers(titles:[String],currentViewController: UIViewController,controllers:[UIViewController], layout:AASLayout) {
         //移除旧数据
         removeOldSubViewInfo()
         //重新初始化数据

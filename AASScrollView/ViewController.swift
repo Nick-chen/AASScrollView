@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     @objc func buttonClicked() {
-        let vc = LTAdvancedManagerDemo()
+        let vc = ManagerTestViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

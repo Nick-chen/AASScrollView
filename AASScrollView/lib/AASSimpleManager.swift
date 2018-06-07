@@ -8,7 +8,7 @@
  
  import UIKit
  
- @objc public protocol LTSimpleScrollViewDelegate: class {
+ @objc public protocol AASSimpleScrollViewDelegate: class {
     @objc optional func glt_scrollViewDidScroll(_ scrollView: UIScrollView)
     @objc optional func glt_scrollViewWillBeginDragging(_ scrollView: UIScrollView)
     @objc optional func glt_scrollViewWillBeginDecelerating(_ scrollView: UIScrollView)
@@ -17,7 +17,7 @@
     @objc optional func glt_scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView)
  }
  
- public class LTSimpleManager: UIView {
+ public class AASSimpleManager: UIView {
     
     /* headerView配置 */
     @objc public func configHeaderView(_ handle: (() -> UIView?)?) {
@@ -68,7 +68,7 @@
     @objc public var hoverY: CGFloat = 0
     
     /* LTSimple的scrollView上下滑动监听 */
-    @objc public weak var delegate: LTSimpleScrollViewDelegate?
+    @objc public weak var delegate: AASSimpleScrollViewDelegate?
     
     private var contentTableView: UIScrollView?
     private var kHeaderHeight: CGFloat = 0.0
@@ -79,8 +79,8 @@
     private var pageView: LTPageView!
     private var currentSelectIndex: Int = 0
     
-    private lazy var tableView: LTTableView = {
-        let tableView = LTTableView(frame: CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height), style:.plain)
+    private lazy var tableView: AASTableView = {
+        let tableView = AASTableView(frame: CGRect(x: 0, y: 0, width: bounds.width, height: bounds.height), style:.plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.showsVerticalScrollIndicator = false
@@ -88,7 +88,7 @@
         return tableView
     }()
     
-    @objc public init(frame: CGRect, viewControllers: [UIViewController], titles: [String], currentViewController:UIViewController, layout: LTLayout) {
+    @objc public init(frame: CGRect, viewControllers: [UIViewController], titles: [String], currentViewController:UIViewController, layout: AASLayout) {
         UIScrollView.initializeOnce()
         self.viewControllers = viewControllers
         self.titles = titles
@@ -107,9 +107,9 @@
     }
  }
  
- extension LTSimpleManager {
+ extension AASSimpleManager {
     
-    private func createPageViewConfig(currentViewController:UIViewController, layout: LTLayout) -> LTPageView {
+    private func createPageViewConfig(currentViewController:UIViewController, layout: AASLayout) -> LTPageView {
         
         let pageView = LTPageView(frame: self.bounds, currentViewController: currentViewController, viewControllers: viewControllers, titles: titles, layout:layout)
         pageView.delegate = self
@@ -117,7 +117,7 @@
     }
  }
  
- extension LTSimpleManager: LTPageViewDelegate {
+ extension AASSimpleManager: LTPageViewDelegate {
     
     public func glt_scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         self.tableView.isScrollEnabled = false
@@ -129,7 +129,7 @@
     
  }
  
- extension LTSimpleManager {
+ extension AASSimpleManager {
     
     private func createSubViews() {
         backgroundColor = UIColor.white
@@ -161,7 +161,7 @@
     
  }
  
- extension LTSimpleManager {
+ extension AASSimpleManager {
     private func refreshData()  {
         DispatchQueue.main.after(0.001) {
             UIView.animate(withDuration: 0.34, animations: {
@@ -172,7 +172,7 @@
     }
  }
  
- extension LTSimpleManager {
+ extension AASSimpleManager {
     private func pageViewDidSelectConfig()  {
         pageView.didSelectIndexBlock = {[weak self] in
             guard let `self` = self else { return }
@@ -188,7 +188,7 @@
     }
  }
  
- extension LTSimpleManager: UITableViewDelegate {
+ extension AASSimpleManager: UITableViewDelegate {
     
     /*
      * 当滑动内容ScrollView的时候， 当内容contentOffset.y 大于 0（说明滑动的是内容ScrollView） 或者 当底部tableview的contentOffset.y大于 header的高度的时候，将底部tableView的偏移量设置为kHeaderHeight， 并将其他的scrollView的contentOffset置为.zero
@@ -230,7 +230,7 @@
     
  }
  
- extension LTSimpleManager: UITableViewDataSource, LTTableViewProtocal {
+ extension AASSimpleManager: UITableViewDataSource, AASTableViewProtocal {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -245,7 +245,7 @@
     }
  }
  
- extension LTSimpleManager {
+ extension AASSimpleManager {
     private func deallocConfig() {
         for viewController in viewControllers {
             viewController.glt_scrollView?.delegate = nil

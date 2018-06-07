@@ -9,14 +9,14 @@
 
 import UIKit
 
-class LTAdvancedManagerDemo: UIViewController,clicked {
+class ManagerTestViewController: UIViewController,clicked {
     
     var clickedState : Bool = false
     private lazy var viewControllers: [UIViewController] = {
-        let oneVc = LTAdvancedTestOneVC()
-        let twoVc = LTAdvancedTestOneVC()
-        let threeVc = LTAdvancedTestOneVC()
-        let fourVc = LTAdvancedTestOneVC()
+        let oneVc = TestTwoViewController()
+        let twoVc = TestTwoViewController()
+        let threeVc = TestTwoViewController()
+        let fourVc = TestTwoViewController()
         return [oneVc, twoVc, threeVc, fourVc]
     }()
     
@@ -24,8 +24,8 @@ class LTAdvancedManagerDemo: UIViewController,clicked {
         return ["热门", "精彩推荐", "科技控", "游戏"]
     }()
     
-    private lazy var layout: LTLayout = {
-        let layout = LTLayout()
+    private lazy var layout: AASLayout = {
+        let layout = AASLayout()
         layout.titleViewBgColor = UIColor(r: 255, g: 239, b: 213)
         layout.titleColor = UIColor(r: 0, g: 0, b: 0)
         layout.titleSelectColor = UIColor(r: 255, g: 0, b: 0)
@@ -39,12 +39,12 @@ class LTAdvancedManagerDemo: UIViewController,clicked {
         return layout
     }()
     
-    private lazy var advancedManager: LTAdvancedManager = {
+    private lazy var advancedManager: AASAdvancedManager = {
         let Y: CGFloat = glt_iphoneX ? 64 + 24.0 : 64.0
         
         let H: CGFloat = glt_iphoneX ? (view.bounds.height - Y - 34) : view.bounds.height - Y
         
-        let advancedManager = LTAdvancedManager(frame: CGRect(x: 0, y: Y, width: view.bounds.width, height: H), viewControllers: self.viewControllers, titles: self.titles, currentViewController: self, layout: layout, headerViewHandle: {[weak self] in
+        let advancedManager = AASAdvancedManager(frame: CGRect(x: 0, y: Y, width: view.bounds.width, height: H), viewControllers: self.viewControllers, titles: self.titles, currentViewController: self, layout: layout, headerViewHandle: {[weak self] in
             guard let strongSelf = self else { return UIView() }
             let headerView = strongSelf.testLabel()
             return headerView
@@ -92,7 +92,7 @@ class LTAdvancedManagerDemo: UIViewController,clicked {
     
 }
 
-extension LTAdvancedManagerDemo: LTAdvancedScrollViewDelegate {
+extension ManagerTestViewController: AASAdvancedScrollViewDelegate {
     
     //MARK: 具体使用请参考以下
     private func advancedManagerConfig() {
@@ -109,10 +109,10 @@ extension LTAdvancedManagerDemo: LTAdvancedScrollViewDelegate {
 }
 
 
-extension LTAdvancedManagerDemo {
-    private func testLabel() -> LTHeaderView {
+extension ManagerTestViewController {
+    private func testLabel() -> TestHeaderView {
         
-        let view = LTHeaderView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 180))
+        let view = TestHeaderView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.width, height: 180))
         view.delegate = self as clicked
         return view
     }

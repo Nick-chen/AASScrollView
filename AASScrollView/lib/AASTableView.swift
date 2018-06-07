@@ -9,7 +9,7 @@
 import UIKit
 
 
-class LTTableView: UITableView, UIGestureRecognizerDelegate {
+class AASTableView: UITableView, UIGestureRecognizerDelegate {
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return gestureRecognizer.isKind(of: UIPanGestureRecognizer.self) && otherGestureRecognizer.isKind(of: UIPanGestureRecognizer.self)
     }

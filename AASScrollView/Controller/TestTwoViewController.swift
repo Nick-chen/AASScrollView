@@ -17,7 +17,7 @@
 import UIKit
 import MJRefresh
 
-class LTAdvancedTestOneVC: UIViewController, LTTableViewProtocal {
+class TestTwoViewController: UIViewController, AASTableViewProtocal {
     
     private lazy var tableView: UITableView = {
         print(UIScreen.main.bounds.height)
@@ -40,7 +40,7 @@ class LTAdvancedTestOneVC: UIViewController, LTTableViewProtocal {
     }
 }
 
-extension LTAdvancedTestOneVC {
+extension TestTwoViewController {
     
     fileprivate func reftreshData()  {
         
@@ -61,7 +61,7 @@ extension LTAdvancedTestOneVC {
 }
 
 
-extension LTAdvancedTestOneVC: UITableViewDelegate, UITableViewDataSource {
+extension TestTwoViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 50

@@ -10,7 +10,7 @@ import UIKit
 import MJRefresh
 
 
-class TestViewController: UIViewController, LTTableViewProtocal {
+class TestViewController: UIViewController, AASTableViewProtocal {
 
     private lazy var tableView: UITableView = {
         print(UIScreen.main.bounds.height)

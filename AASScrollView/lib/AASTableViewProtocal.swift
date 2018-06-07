@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-public protocol LTTableViewProtocal { }
+public protocol AASTableViewProtocal { }
 
-public extension LTTableViewProtocal {
+public extension AASTableViewProtocal {
     
     private func configIdentifier(_ identifier: inout String) -> String {
         var index = identifier.index(of: ".")
