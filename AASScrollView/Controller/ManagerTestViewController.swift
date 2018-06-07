@@ -1,6 +1,6 @@
 
 //
-//  LTAdvancedManagerDemo.swift
+//  ManagerTestViewController.swift
 //  LTScrollView
 //
 //  Created by chenweiqiang on 2018/6/7.
@@ -74,7 +74,7 @@ class ManagerTestViewController: UIViewController,clicked {
     }
     
     deinit {
-        print("LTAdvancedManagerDemo < --> deinit")
+        print("ManagerTestViewController < --> deinit")
     }
     
     func tapHandle(content: String) {
