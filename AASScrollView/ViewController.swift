@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let advance :UIViewController = LTAdvancedManagerDemo() as UIViewController
+//    let advance :UIViewController = LTAdvancedManagerDemo() as UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     @objc func buttonClicked() {
     
-        navigationController?.pushViewController(advance, animated: true)
+//        navigationController?.pushViewController(advance, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
