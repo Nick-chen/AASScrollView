@@ -151,10 +151,10 @@
 		A0C2BA1F20C989DA00FC218A /* AASScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				A0C2BA6520C98CE900FC218A /* LTAdvanced */,
 				A0C2BA4E20C98A5100FC218A /* lib */,
 				A0C2BA2020C989DA00FC218A /* AppDelegate.swift */,
 				A0C2BA2220C989DA00FC218A /* ViewController.swift */,
+				A0C2BA6620C98CE900FC218A /* Controller */,
 				A0C2BA2420C989DA00FC218A /* Main.storyboard */,
 				A0C2BA2720C989DC00FC218A /* Assets.xcassets */,
 				A0C2BA2920C989DC00FC218A /* LaunchScreen.storyboard */,
@@ -194,14 +194,6 @@
 				A0C2BA5820C98A5100FC218A /* LTTableView.swift */,
 			);
 			path = lib;
-			sourceTree = "<group>";
-		};
-		A0C2BA6520C98CE900FC218A /* LTAdvanced */ = {
-			isa = PBXGroup;
-			children = (
-				A0C2BA6620C98CE900FC218A /* Controller */,
-			);
-			path = LTAdvanced;
 			sourceTree = "<group>";
 		};
 		A0C2BA6620C98CE900FC218A /* Controller */ = {
