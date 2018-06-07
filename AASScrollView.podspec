@@ -18,10 +18,11 @@ Pod::Spec.new do |s|
     s.license      = { :type => "MIT", :file => "LICENSE" }
 
     s.author             = { "458318720@qq.com" => "458318720@qq.com" }
-    s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '9.0'
 
     s.source       = { :git => "https://github.com/Nick-chen/AASScrollView.git", :tag => s.version.to_s }
     s.source_files  = "AASScrollView", "AASScrollView/AASScrollView/lib/**/*.{h,m}"
     s.requires_arc = true
+    s.swift_version = '4.1'
 
 end
