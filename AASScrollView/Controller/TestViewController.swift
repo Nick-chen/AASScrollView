@@ -8,6 +8,7 @@
 
 import UIKit
 import MJRefresh
+import AASScrollViewManagement
 
 
 class TestViewController: UIViewController, AASTableViewProtocal {

@@ -14,15 +14,7 @@
 		A0C2BA2B20C989DC00FC218A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C2BA2920C989DC00FC218A /* LaunchScreen.storyboard */; };
 		A0C2BA3620C989DC00FC218A /* AASScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA3520C989DC00FC218A /* AASScrollViewTests.swift */; };
 		A0C2BA4120C989DC00FC218A /* AASScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA4020C989DC00FC218A /* AASScrollViewUITests.swift */; };
-		A0C2BA5920C98A5100FC218A /* AASSimpleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA4F20C98A5100FC218A /* AASSimpleManager.swift */; };
 		A0C2BA5B20C98A5100FC218A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A0C2BA5120C98A5100FC218A /* LICENSE */; };
-		A0C2BA5C20C98A5100FC218A /* AASDispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5220C98A5100FC218A /* AASDispatchQueue.swift */; };
-		A0C2BA5D20C98A5100FC218A /* AASAdvancedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5320C98A5100FC218A /* AASAdvancedManager.swift */; };
-		A0C2BA5E20C98A5100FC218A /* AASTableViewProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5420C98A5100FC218A /* AASTableViewProtocal.swift */; };
-		A0C2BA5F20C98A5100FC218A /* LTPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5520C98A5100FC218A /* LTPageView.swift */; };
-		A0C2BA6020C98A5100FC218A /* AASVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5620C98A5100FC218A /* AASVCExtension.swift */; };
-		A0C2BA6120C98A5100FC218A /* AASScrollExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5720C98A5100FC218A /* AASScrollExtension.swift */; };
-		A0C2BA6220C98A5100FC218A /* AASTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA5820C98A5100FC218A /* AASTableView.swift */; };
 		A0C2BA6B20C98CE900FC218A /* TestHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6720C98CE900FC218A /* TestHeaderView.swift */; };
 		A0C2BA6C20C98CE900FC218A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6820C98CE900FC218A /* TestViewController.swift */; };
 		A0C2BA6D20C98CE900FC218A /* ManagerTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2BA6920C98CE900FC218A /* ManagerTestViewController.swift */; };
@@ -69,15 +61,7 @@
 		A0C2BA3C20C989DC00FC218A /* AASScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AASScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2BA4020C989DC00FC218A /* AASScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AASScrollViewUITests.swift; sourceTree = "<group>"; };
 		A0C2BA4220C989DC00FC218A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0C2BA4F20C98A5100FC218A /* AASSimpleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASSimpleManager.swift; sourceTree = "<group>"; };
 		A0C2BA5120C98A5100FC218A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		A0C2BA5220C98A5100FC218A /* AASDispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASDispatchQueue.swift; sourceTree = "<group>"; };
-		A0C2BA5320C98A5100FC218A /* AASAdvancedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASAdvancedManager.swift; sourceTree = "<group>"; };
-		A0C2BA5420C98A5100FC218A /* AASTableViewProtocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASTableViewProtocal.swift; sourceTree = "<group>"; };
-		A0C2BA5520C98A5100FC218A /* LTPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTPageView.swift; sourceTree = "<group>"; };
-		A0C2BA5620C98A5100FC218A /* AASVCExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASVCExtension.swift; sourceTree = "<group>"; };
-		A0C2BA5720C98A5100FC218A /* AASScrollExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASScrollExtension.swift; sourceTree = "<group>"; };
-		A0C2BA5820C98A5100FC218A /* AASTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AASTableView.swift; sourceTree = "<group>"; };
 		A0C2BA6720C98CE900FC218A /* TestHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHeaderView.swift; sourceTree = "<group>"; };
 		A0C2BA6820C98CE900FC218A /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A0C2BA6920C98CE900FC218A /* ManagerTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerTestViewController.swift; sourceTree = "<group>"; };
@@ -156,7 +140,6 @@
 		A0C2BA1F20C989DA00FC218A /* AASScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				A0C2BA4E20C98A5100FC218A /* lib */,
 				A0C2BA2020C989DA00FC218A /* AppDelegate.swift */,
 				A0C2BA2220C989DA00FC218A /* ViewController.swift */,
 				A0C2BA6620C98CE900FC218A /* Controller */,
@@ -184,21 +167,6 @@
 				A0C2BA4220C989DC00FC218A /* Info.plist */,
 			);
 			path = AASScrollViewUITests;
-			sourceTree = "<group>";
-		};
-		A0C2BA4E20C98A5100FC218A /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				A0C2BA4F20C98A5100FC218A /* AASSimpleManager.swift */,
-				A0C2BA5220C98A5100FC218A /* AASDispatchQueue.swift */,
-				A0C2BA5320C98A5100FC218A /* AASAdvancedManager.swift */,
-				A0C2BA5420C98A5100FC218A /* AASTableViewProtocal.swift */,
-				A0C2BA5520C98A5100FC218A /* LTPageView.swift */,
-				A0C2BA5620C98A5100FC218A /* AASVCExtension.swift */,
-				A0C2BA5720C98A5100FC218A /* AASScrollExtension.swift */,
-				A0C2BA5820C98A5100FC218A /* AASTableView.swift */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		A0C2BA6620C98CE900FC218A /* Controller */ = {
@@ -350,10 +318,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AASScrollView/Pods-AASScrollView-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AASScrollViewManagement/AASScrollViewManagement.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AASScrollViewManagement.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,19 +356,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C2BA5F20C98A5100FC218A /* LTPageView.swift in Sources */,
 				A0C2BA6B20C98CE900FC218A /* TestHeaderView.swift in Sources */,
 				A0C2BA2320C989DA00FC218A /* ViewController.swift in Sources */,
-				A0C2BA6120C98A5100FC218A /* AASScrollExtension.swift in Sources */,
-				A0C2BA6220C98A5100FC218A /* AASTableView.swift in Sources */,
-				A0C2BA5E20C98A5100FC218A /* AASTableViewProtocal.swift in Sources */,
-				A0C2BA5D20C98A5100FC218A /* AASAdvancedManager.swift in Sources */,
-				A0C2BA6020C98A5100FC218A /* AASVCExtension.swift in Sources */,
-				A0C2BA5C20C98A5100FC218A /* AASDispatchQueue.swift in Sources */,
 				A0C2BA6D20C98CE900FC218A /* ManagerTestViewController.swift in Sources */,
 				A0C2BA2120C989DA00FC218A /* AppDelegate.swift in Sources */,
 				A0C2BA6C20C98CE900FC218A /* TestViewController.swift in Sources */,
-				A0C2BA5920C98A5100FC218A /* AASSimpleManager.swift in Sources */,
 				A0C2BA6E20C98CE900FC218A /* TestTwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

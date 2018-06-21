@@ -1,16 +1,20 @@
 PODS:
+  - AASScrollViewManagement (0.0.1)
   - MJRefresh (3.1.14.1)
 
 DEPENDENCIES:
+  - AASScrollViewManagement (~> 0.0.1)
   - MJRefresh (~> 3.1.14.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AASScrollViewManagement
     - MJRefresh
 
 SPEC CHECKSUMS:
+  AASScrollViewManagement: a90260397362da6bc6bcb5473e0bc673e06f7d78
   MJRefresh: 238e6a37e2dba12160ee3b79f6d2a2b26abcab42
 
-PODFILE CHECKSUM: 1dfc79cef69d25e280c165aa4652c3007344e7de
+PODFILE CHECKSUM: ec6010d61b34fe39b0ccc2faddf80fc9b79ea62f
 
 COCOAPODS: 1.5.3

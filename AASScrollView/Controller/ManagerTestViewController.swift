@@ -8,6 +8,8 @@
 //
 
 import UIKit
+import AASScrollViewManagement
+
 
 class ManagerTestViewController: UIViewController,clicked {
     
@@ -44,7 +46,7 @@ class ManagerTestViewController: UIViewController,clicked {
         
         let H: CGFloat = glt_iphoneX ? (view.bounds.height - Y - 34) : view.bounds.height - Y
         
-        let advancedManager = AASAdvancedManager(frame: CGRect(x: 0, y: Y, width: view.bounds.width, height: H), viewControllers: self.viewControllers, titles: self.titles, currentViewController: self, layout: layout, headerViewHandle: {[weak self] in
+        let advancedManager = AASAdvancedManager(frame: CGRect(x: 0, y: Y, width: view.bounds.width, height: H), viewControllers: [TestViewController()], titles:  ["test"], currentViewController: self, layout: layout, headerViewHandle: {[weak self] in
             guard let strongSelf = self else { return UIView() }
             let headerView = strongSelf.testLabel()
             return headerView
@@ -67,6 +69,7 @@ class ManagerTestViewController: UIViewController,clicked {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         view.backgroundColor = UIColor.white
         self.automaticallyAdjustsScrollViewInsets = false
         view.addSubview(advancedManager)
@@ -80,10 +83,11 @@ class ManagerTestViewController: UIViewController,clicked {
     func tapHandle(content: String) {
         if clickedState {
             clickedState = false
-            advancedManager.updateTitlesAndViewControllers(titles: self.titles, vcs: self.viewControllers, currentViewController: self, layout: layout)
+            advancedManager.updateTitlesAndViewControllers(titles: ["test"], vcs: [TestViewController()], currentViewController: self, layout: layout)
+            
         } else {
             clickedState = true
-            advancedManager.updateTitlesAndViewControllers(titles: ["test"], vcs: [TestViewController()], currentViewController: self, layout: layout)
+            advancedManager.updateTitlesAndViewControllers(titles: self.titles, vcs: self.viewControllers, currentViewController: self, layout: layout)
 
         }
         

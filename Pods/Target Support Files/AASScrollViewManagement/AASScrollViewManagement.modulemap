@@ -1,0 +1,6 @@
+framework module AASScrollViewManagement {
+  umbrella header "AASScrollViewManagement-umbrella.h"
+
+  export *
+  module * { export * }
+}
